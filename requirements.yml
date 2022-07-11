@@ -1,0 +1,4 @@
+---
+- name: java
+  src: https://github.com/geerlingguy/ansible-role-java.git
+  version: 2.1.0

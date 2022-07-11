@@ -1,0 +1,11 @@
+---
+- name: 'Install couchbase'
+  hosts: databases
+  become: true
+  pre_tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: True
+  roles:
+    - java
+    - couchbase
